@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Tomasz Kasprzycki
  */
 @RestController
-@RequestMapping(value = "/api/hello")
-public class HelloController {
+@RequestMapping(value = "/api/notsecured")
+public class NotSecuredController {
 
     @GetMapping
-    public String helloMethod() {
-        return "Hello from secured";
+    public String notSecured(){
+        return "not secured";
     }
 }
